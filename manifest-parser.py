@@ -5,7 +5,8 @@ import re
 
 bugre = re.compile("bug\\s+(\\d+)", re.I);
 
-def searchFile(f, path):
+def searchFile(f):
+    path = f.name
     first = True
     section = ''
 
@@ -53,4 +54,4 @@ def searchFile(f, path):
 
 for path in sys.argv[1:]:
     with open(path) as f:
-        searchFile(f, path)
+        searchFile(f)
