@@ -1,0 +1,3 @@
+This script helps find tests that are disabled in e10s and tries to print the bug number associated with turning them back on.
+
+to-run.sh contains a single line of bash that can be used to find all occurances in a specific tree (~/work/main/mozilla).
